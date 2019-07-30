@@ -1,0 +1,35 @@
+@import './variables/color.scss';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $black-color;
+  font-size: 1.4rem; // =14px
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN',
+    メイリオ, Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
