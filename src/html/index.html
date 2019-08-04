@@ -35,31 +35,60 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!--Adobe font-->
+    <script>
+      (function(d) {
+        var config = {
+            kitId: 'etn3xei',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
   </head>
   <body>
+    <!--header-->
     <header class="header">
-      <div class="header__content">
-        <div class="header-title">
-          <div class="header-title__logo"></div>
-        </div>
-        <div class="header-btn">
-          <div class="header-btn__misic"></div>
-          <div class="header-btn__tweet">
-            <a
-              href="https://twitter.com/intent/tweet?text=幻想シネマ │ 天狗広告社&url=https://ba-company.github.io/gensou-cinema/&hashtags=C96,幻想シネマ"
-            >
-              <div class="tweet__btn"></div>
-            </a>
-          </div>
-        </div>
+      <div class="header-title"></div>
+      <div class="header-btn">
+        <div class="header-btn__icon header-btn__music"></div>
+        <a
+          href="https://twitter.com/intent/tweet?text=幻想シネマ │ 天狗広告社&url=https://ba-company.github.io/gensou-cinema/&hashtags=C96,幻想シネマ"
+          class="header-btn__icon header-btn__tweet"
+        >
+        </a>
       </div>
     </header>
+    <!--main-->
     <main class="main">
       <img
         class="circle-space vertical-lefy-text"
         data-src="/gensou-cinema/images/test.png"
         alt="コミックマーケット96 月曜日 南フ40a"
       />
+      <!--intro-->
       <div class="main__intro">
         <section class="intro">
           <h2 class="intro__text">
@@ -79,6 +108,7 @@
           </div>
         </section>
       </div>
+      <!--staff-->
       <div class="main__content">
         <section class="arrow"></section>
         <section class="staff">
@@ -168,6 +198,7 @@
             <div class="list__sns"></div>
           </div>
         </section>
+        <!--overview-->
         <section class="overview">
           <h3 class="overview__date">2019.8.12</h3>
           <img
@@ -199,6 +230,7 @@
         </section>
       </div>
     </main>
+    <!--footer-->
     <footer class="footer">
       <div class="footer__content">
         <img

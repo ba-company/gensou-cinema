@@ -7,9 +7,11 @@ html {
 body {
   color: $black-color;
   font-size: 1.4rem; // =14px
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
-    '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN',
-    メイリオ, Meiryo, sans-serif;
+  font-family: fot-tsukuardgothic-std, -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 a {
@@ -32,4 +34,12 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.text--cinema {
+  font-family: tbcinergothic-std, -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }

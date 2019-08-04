@@ -1,0 +1,19 @@
+@import './intro.scss';
+@import './staff.scss';
+@import './overview.scss';
+@import '../variables//color.scss';
+@import '../variables/layout.scss';
+
+.main {
+  position: relative;
+  width: 100%;
+  padding-top: calc(#{$header-height} - 5px);
+  border: 5px solid $black-color;
+  border-bottom: none;
+  background-color: aqua;
+
+  .main__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

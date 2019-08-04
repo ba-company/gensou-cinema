@@ -1,0 +1,53 @@
+@import '../mixins/break_point.scss';
+@import '../variables/layout.scss';
+@import '../variables/color.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding: 15px 15px 0;
+  z-index: 9999;
+
+  .header-title {
+    width: 160px;
+    height: 100%;
+    background-image: url(/gensou-cinema/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 74px;
+    height: 100%;
+
+    .header-btn__icon {
+      width: 32px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .header-btn__music {
+      background-image: url(/gensou-cinema/images/btn_off.svg);
+
+      &:hover {
+        background-image: url(/gensou-cinema/images/btn_on.svg);
+      }
+    }
+
+    .header-btn__tweet {
+      background-image: url(/gensou-cinema/images/btn_tweet.svg);
+
+      &:hover {
+        background-image: url(/gensou-cinema/images/btn_tweet_hover.svg);
+      }
+    }
+  }
+}

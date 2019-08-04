@@ -1,0 +1,7 @@
+$sm-breakpoint: 576px;
+
+@mixin media-pc {
+  @media (min-width: $sm-breakpoint) {
+    @content;
+  }
+}
