@@ -1,3 +1,11 @@
 @import '~sanitize.css/sanitize.css';
 @import './global.scss';
 @import './utils/lazyload.scss';
+
+.icon {
+  transition: transform 1s ease-out;
+
+  &.icon--small {
+    transform: scale(0.5);
+  }
+}
