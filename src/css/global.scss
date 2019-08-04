@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  position: relative;
   color: $black-color;
   font-size: 1.4rem; // =14px
   font-family: fot-tsukuardgothic-std, -apple-system, BlinkMacSystemFont,
@@ -42,4 +43,25 @@ ol {
     'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+
+[data-ruby] {
+  position: relative;
+}
+
+[data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: -1.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 0.5rem;
+  font-weight: 100;
+  letter-spacing: -4px;
+}
+
+.arrow {
+  width: 18px;
+  margin: 0 auto;
 }

@@ -1,7 +1,8 @@
 @import '../mixins/break_point.scss';
 @import '../variables/color.scss';
 
-.about {
+.overview {
+  display: none;
   position: relative;
   padding: 60px 30px;
 }

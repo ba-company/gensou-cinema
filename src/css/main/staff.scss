@@ -1,7 +1,10 @@
 @import '../mixins/break_point.scss';
 @import '../variables/color.scss';
 
-.about {
-  position: relative;
+.staff {
+  display: none;
+  width: 100%;
+  background-color: $base-color;
   padding: 60px 30px;
+  z-index: 3;
 }
