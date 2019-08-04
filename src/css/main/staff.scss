@@ -43,7 +43,7 @@
 
     .list__illustrator-list {
       width: 100%;
-      margin: 50px 0;
+      margin: 60px 0;
 
       .illustrator-list__content {
         position: relative;
@@ -94,29 +94,65 @@
           bottom: 5px;
           right: 5px;
 
-          .sns__btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 6px;
-            padding: 4px;
+          .sns__illustrator-btn {
             border: 1px solid $base-color;
-            border-radius: 3px;
-
-            &:first-child {
-              margin-left: 0;
-            }
 
             &:hover {
               background-color: $primary-color;
               border: 1px solid $primary-color;
             }
-
-            .btn__img {
-              width: 18px;
-              height: 18px;
-            }
           }
+        }
+      }
+    }
+
+    .list__name {
+      margin: 35px 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.3rem;
+
+      .name__logo-touhoujihen {
+        width: 150px;
+        height: auto;
+      }
+
+      .name__logo-mmy {
+        width: 90px;
+        height: auto;
+      }
+
+      .name__logo-ichitasuichiha {
+        width: 150px;
+        height: auto;
+      }
+
+      .name__music-title {
+        margin-top: 40px;
+        font-size: 1.4rem;
+      }
+
+      .name__music-original {
+        margin-top: 2px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .list__sns {
+      display: flex;
+      justify-content: center;
+
+      .sns__staff-btn {
+        border: 1px solid $brown-color;
+
+        &:hover {
+          background-color: $brown-color;
+        }
+
+        .staff-btn__name {
+          margin-right: 3px;
+          font-size: 1rem;
+          line-height: 0;
+          color: $brown-color;
         }
       }
     }

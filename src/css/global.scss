@@ -65,3 +65,32 @@ ol {
 .arrow {
   width: 12px;
 }
+
+.border {
+  width: 90%;
+  height: 1px;
+  margin: 55px auto;
+  background-color: $primary-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.sns--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+  padding: 4px;
+  border-radius: 3px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.sns--btn-img {
+  width: 18px;
+  height: 18px;
+}
