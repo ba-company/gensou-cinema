@@ -42,7 +42,8 @@ ol {
     'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
     'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
   font-weight: 600;
-  font-style: normal;
+  font-style: italic;
+  letter-spacing: 0.1rem;
 }
 
 [data-ruby] {
@@ -62,6 +63,5 @@ ol {
 }
 
 .arrow {
-  width: 18px;
-  margin: 0 auto;
+  width: 12px;
 }

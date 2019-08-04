@@ -2,9 +2,123 @@
 @import '../variables/color.scss';
 
 .staff {
-  display: none;
+  position: absolute;
+  top: 200vh;
   width: 100%;
   background-color: $base-color;
-  padding: 60px 30px;
-  z-index: 3;
+  padding: 60px 20px;
+  z-index: 4;
+
+  .staff__arrow {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .staff__list {
+    text-align: center;
+
+    .list__header {
+      .header__icon {
+        width: 34px;
+        height: 34px;
+      }
+
+      .header__post {
+        margin-top: 15px;
+        color: $primary-color;
+        font-size: 2.1rem;
+        letter-spacing: 0.5rem;
+        text-indent: 0.5rem;
+      }
+
+      .header__title {
+        margin-top: 5px;
+        color: $brown-color;
+        font-size: 1.1rem;
+      }
+    }
+
+    .list__illustrator-list {
+      width: 100%;
+      margin: 50px 0;
+
+      .illustrator-list__content {
+        position: relative;
+        margin-top: 20px;
+        border: 2px solid $black-color;
+        box-sizing: border-box;
+
+        .content__name {
+          position: relative;
+          width: 100%;
+          height: 90px;
+          background-image: url(/gensou-cinema/images/main_visual.png);
+          background-size: cover;
+
+          .name__img {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            width: auto;
+            height: 33px;
+          }
+        }
+
+        .content__charge {
+          display: flex;
+          align-items: center;
+          height: 24px;
+          padding-left: 5px;
+          background-color: $black-color;
+          color: $base-color;
+          font-size: 1.2rem;
+          text-align: left;
+
+          .charge__apply {
+            color: $primary-color;
+          }
+
+          .charge__director {
+            font-size: 1rem;
+            margin-left: 10px;
+            letter-spacing: 0;
+          }
+        }
+
+        .content__sns {
+          position: absolute;
+          display: flex;
+          bottom: 5px;
+          right: 5px;
+
+          .sns__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6px;
+            padding: 4px;
+            border: 1px solid $base-color;
+            border-radius: 3px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:hover {
+              background-color: $primary-color;
+              border: 1px solid $primary-color;
+            }
+
+            .btn__img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
