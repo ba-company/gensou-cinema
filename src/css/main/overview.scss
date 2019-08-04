@@ -2,7 +2,36 @@
 @import '../variables/color.scss';
 
 .overview {
-  display: none;
-  position: relative;
-  padding: 60px 30px;
+  padding: 60px 20px;
+  color: $base-color;
+  background-color: $bg-red-color;
+  text-align: center;
+
+  .overview__img {
+    position: relative;
+    margin: 20px 0;
+
+    .img__vertical-text {
+      position: absolute;
+      top: 50%;
+      width: 20px;
+    }
+
+    .img__book-img {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .overview__benefit {
+    margin-top: 20px;
+    padding: 20px 15px;
+    background-color: $bg-black-color;
+    text-align: left;
+
+    .benefit__title {
+      color: $brown-color;
+    }
+  }
 }

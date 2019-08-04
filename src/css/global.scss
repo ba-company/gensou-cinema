@@ -94,3 +94,17 @@ ol {
   width: 18px;
   height: 18px;
 }
+
+.vertical-right-text {
+  position: absolute;
+  width: 18px;
+  height: auto;
+  right: 10px;
+}
+
+.vertical-left-text {
+  position: absolute;
+  left: 10px;
+  width: 18px;
+  height: auto;
+}

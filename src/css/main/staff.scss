@@ -2,8 +2,7 @@
 @import '../variables/color.scss';
 
 .staff {
-  position: absolute;
-  top: 200vh;
+  position: relative;
   width: 100%;
   background-color: $base-color;
   padding: 60px 20px;

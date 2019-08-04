@@ -1,18 +1,10 @@
-@import './intro.scss';
 @import './staff.scss';
 @import './overview.scss';
 @import '../variables//color.scss';
 @import '../variables/layout.scss';
 
 .main {
-  position: relative;
+  position: absolute;
+  top: 200vh;
   width: 100%;
-  padding-top: calc(#{$header-height} - 5px);
-  min-height: 100vh;
-  height: 200vh;
-  background-attachment: fixed;
-  background-image: url(/gensou-cinema/images/main_visual.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
 }
