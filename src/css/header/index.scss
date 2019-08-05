@@ -35,15 +35,16 @@
       background-size: contain;
     }
 
-    .header-btn__music {
+    .header-btn--music {
+      cursor: pointer;
       background-image: url(/gensou-cinema/images/btn_off.svg);
 
-      &:hover {
+      &.js-is-playing {
         background-image: url(/gensou-cinema/images/btn_on.svg);
       }
     }
 
-    .header-btn__tweet {
+    .header-btn--tweet {
       background-image: url(/gensou-cinema/images/btn_tweet.svg);
 
       &:hover {
