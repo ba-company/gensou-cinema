@@ -31,7 +31,18 @@
     text-align: left;
 
     .benefit__title {
+      display: flex;
+      align-items: center;
       color: $brown-color;
+
+      .title__icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .benefit__list {
+      margin-top: 10px;
     }
   }
 }
