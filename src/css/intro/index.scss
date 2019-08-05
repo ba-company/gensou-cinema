@@ -13,10 +13,12 @@
 
   .intro__circle-space {
     position: absolute;
-    top: 320px;
+    bottom: 105vh;
     left: 15px;
     width: 18px;
-    height: auto;
+    margin: auto;
+    padding: 5px 0;
+    background-color: $primary-color;
     z-index: 3;
   }
 
@@ -25,9 +27,8 @@
     top: 110vh;
     right: 0;
     left: 0;
-    width: 90%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 15px;
     padding: 50px 10px;
     background-color: rgba(33, 32, 45, 0.9);
     color: $base-color;

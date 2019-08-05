@@ -67,7 +67,7 @@ ol {
 }
 
 .border {
-  width: 90%;
+  width: 85%;
   height: 1px;
   margin: 55px auto;
   background-color: $primary-color;
@@ -93,18 +93,4 @@ ol {
 .sns--btn-img {
   width: 18px;
   height: 18px;
-}
-
-.vertical-right-text {
-  position: absolute;
-  width: 18px;
-  height: auto;
-  right: 10px;
-}
-
-.vertical-left-text {
-  position: absolute;
-  left: 10px;
-  width: 18px;
-  height: auto;
 }

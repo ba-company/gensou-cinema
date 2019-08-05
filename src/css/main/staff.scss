@@ -62,7 +62,7 @@
             left: 5px;
             bottom: 5px;
             width: auto;
-            height: 33px;
+            height: 32px;
           }
         }
 
@@ -70,10 +70,10 @@
           display: flex;
           align-items: center;
           height: 24px;
-          padding-left: 5px;
+          padding-left: 3px;
           background-color: $black-color;
           color: $base-color;
-          font-size: 1.2rem;
+          font-size: 1.18rem;
           text-align: left;
 
           .charge__apply {
@@ -82,7 +82,7 @@
 
           .charge__director {
             font-size: 1rem;
-            margin-left: 10px;
+            margin-left: 8px;
             letter-spacing: 0;
           }
         }
@@ -144,7 +144,8 @@
         border: 1px solid $brown-color;
 
         &:hover {
-          background-color: $brown-color;
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
         }
 
         .staff-btn__name {

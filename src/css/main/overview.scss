@@ -2,7 +2,7 @@
 @import '../variables/color.scss';
 
 .overview {
-  padding: 60px 20px;
+  padding: 60px 15px;
   color: $base-color;
   background-color: $bg-red-color;
   text-align: center;
@@ -11,10 +11,22 @@
     position: relative;
     margin: 20px 0;
 
-    .img__vertical-text {
+    .img__vertical-text-right {
       position: absolute;
-      top: 50%;
-      width: 20px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 18px;
+    }
+
+    .img__vertical-text-left {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 18px;
     }
 
     .img__book-img {
@@ -25,24 +37,33 @@
   }
 
   .overview__benefit {
-    margin-top: 20px;
-    padding: 20px 15px;
-    background-color: $bg-black-color;
+    width: 90%;
+    margin: 20px auto 0;
+    padding: 12px 40px 12px 20px;
+    background-image: url(/gensou-cinema/images/ticket_box.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: left;
 
     .benefit__title {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       color: $brown-color;
 
       .title__icon {
         width: 20px;
         height: 20px;
       }
+
+      .title__text {
+        margin-left: 7px;
+      }
     }
 
     .benefit__list {
-      margin-top: 10px;
+      margin-top: 8px;
+      font-size: 1.25rem;
     }
   }
 }
