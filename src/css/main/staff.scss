@@ -4,8 +4,9 @@
 .staff {
   position: relative;
   width: 100%;
-  background-color: $base-color;
   padding: 60px 20px;
+  background-image: url(/gensou-cinema/images/bg.svg);
+  background-size: 58px;
   z-index: 4;
 
   .staff__arrow {
@@ -121,7 +122,7 @@
       }
 
       .name__logo-ichitasuichiha {
-        width: 150px;
+        width: 170px;
         height: auto;
       }
 

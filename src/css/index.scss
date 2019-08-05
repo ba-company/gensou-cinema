@@ -6,11 +6,3 @@
 @import './footer/index.scss';
 @import './back_to_top.scss';
 @import './utils/lazyload.scss';
-
-.icon {
-  transition: transform 1s ease-out;
-
-  &.icon--small {
-    transform: scale(0.5);
-  }
-}

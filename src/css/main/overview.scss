@@ -2,7 +2,7 @@
 @import '../variables/color.scss';
 
 .overview {
-  padding: 60px 15px;
+  padding: 60px 15px 80px;
   color: $base-color;
   background-color: $bg-red-color;
   text-align: center;
@@ -31,9 +31,13 @@
 
     .img__book-img {
       display: flex;
-      width: 80%;
+      width: 78%;
       margin: 0 auto;
     }
+  }
+
+  .overview__detail {
+    line-height: 1.8;
   }
 
   .overview__benefit {

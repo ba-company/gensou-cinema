@@ -54,12 +54,13 @@ ol {
   content: attr(data-ruby);
   position: absolute;
   top: -1.2rem;
-  left: 0;
-  right: 0;
+  left: -8px;
+  width: 90px;
   margin: auto;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: 100;
-  letter-spacing: -4px;
+  letter-spacing: -1px;
+  transform: scale(0.8);
 }
 
 .arrow {
