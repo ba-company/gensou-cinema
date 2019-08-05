@@ -20,6 +20,11 @@
     padding: 5px 0;
     background-color: $primary-color;
     z-index: 3;
+
+    @include media-pc {
+      left: 40px;
+      width: 30px;
+    }
   }
 
   .intro__introduction {
@@ -35,21 +40,48 @@
     text-align: center;
     z-index: 2;
 
-    .introduction__text {
-      font-size: 1.25rem;
-      line-height: 2;
+    @include media-pc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      max-width: 1100px;
+      height: 65vh;
+      margin: 0 auto;
+      padding: 50px;
     }
 
-    .introduction__catch {
-      display: block;
-      margin-top: 40px;
-      font-size: 1rem;
-    }
+    .introduction__wrapper {
+      .wrapper__text {
+        font-size: 1.25rem;
+        line-height: 2;
 
-    .introduction__logo {
-      width: 130px;
-      height: auto;
-      margin-top: 10px;
+        @include media-pc {
+          font-size: 1.8rem;
+        }
+      }
+
+      .wrapper__catch {
+        display: block;
+        margin-top: 40px;
+        font-size: 1rem;
+
+        @include media-pc {
+          margin-top: 70px;
+          font-size: 1.4rem;
+        }
+      }
+
+      .wrapper__logo {
+        width: 130px;
+        height: auto;
+        margin-top: 10px;
+
+        @include media-pc {
+          width: 200px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

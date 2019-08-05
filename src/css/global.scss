@@ -1,4 +1,5 @@
 @import './variables/color.scss';
+@import './mixins/break_point.scss';
 
 html {
   font-size: 62.5%;
@@ -46,6 +47,12 @@ ol {
   letter-spacing: 0.1rem;
 }
 
+.text--r {
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 [data-ruby] {
   position: relative;
 }
@@ -61,10 +68,20 @@ ol {
   font-weight: 100;
   letter-spacing: -1px;
   transform: scale(0.8);
+
+  @include media-pc {
+    top: -1.4rem;
+    width: 115px;
+    font-size: 1.2rem;
+  }
 }
 
 .arrow {
   width: 12px;
+
+  @include media-pc {
+    width: 16px;
+  }
 }
 
 .border {
@@ -75,6 +92,13 @@ ol {
 
   &:first-child {
     margin-top: 0;
+  }
+
+  @include media-pc {
+    width: 50%;
+    max-width: 650px;
+    min-width: 400px;
+    margin: 100px auto;
   }
 }
 
@@ -89,9 +113,22 @@ ol {
   &:first-child {
     margin-left: 0;
   }
+
+  @include media-pc {
+    top: -1.4rem;
+    margin-left: 12px;
+    padding: 7px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+  }
 }
 
 .sns--btn-img {
   width: 18px;
   height: 18px;
+
+  @include media-pc {
+    width: 26px;
+    height: 26px;
+  }
 }

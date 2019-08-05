@@ -27,28 +27,7 @@
         scriptTimeout: 3000,
         async: true
       },
-        h = d.documentElement,
-        t = setTimeout(function () {
-          h.className =
-            h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
-        }, config.scriptTimeout),
-        tk = d.createElement('script'),
-        f = false,
-        s = d.getElementsByTagName('script')[0],
-        a;
-      h.className += ' wf-loading';
-      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-      tk.async = true;
-      tk.onload = tk.onreadystatechange = function () {
-        a = this.readyState;
-        if (f || (a && a != 'complete' && a != 'loaded')) return;
-        f = true;
-        clearTimeout(t);
-        try {
-          Typekit.load(config);
-        } catch (e) { }
-      };
-      s.parentNode.insertBefore(tk, s);
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
@@ -68,18 +47,20 @@
   <section class="intro">
     <img class="intro__circle-space lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
       alt="コミックマーケット96 月曜日 南フ40a" />
-    <div class="intro__introduction text--cinema">
-      <h2 class="introduction__text">
-        外の世界から持ち込まれた＜映画＞は<br />
-        幻想郷に新たな戦いを生み出した。<br /><br />
-        世はまさにポスト弾幕の時代――<br /><br />
-        絢爛たる<span data-ruby="シューティングゲーム">銀幕の決闘</span><br />
-        刮目して見よ！
-      </h2>
-      <span class="introduction__catch">
-        ［イラスト×デザイン×ライブ2D　合同誌］
-      </span>
-      <img class="introduction__logo lazyload" data-src="/gensou-cinema/images/logo.svg" alt="幻想シネマ" />
+    <div class="intro__introduction">
+      <div class="introduction__wrapper">
+        <h2 class="wrapper__text text--cinema">
+          外の世界から持ち込まれた＜映画＞は<br />
+          幻想郷に新たな戦いを生み出した。<br /><br />
+          世はまさにポスト弾幕の時代――<br /><br />
+          絢爛たる<span data-ruby="シューティングゲーム">銀幕の決闘</span><br />
+          刮目して見よ！
+        </h2>
+        <span class="wrapper__catch">
+          ［イラスト×デザイン×ライブ2D　合同誌］
+        </span>
+        <img class="wrapper__logo lazyload" data-src="/gensou-cinema/images/logo.svg" alt="幻想シネマ" />
+      </div>
     </div>
   </section>
   <!--main-->
@@ -100,7 +81,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_fungi.svg" alt="茸下ふんぎ" />
             </div>
-            <h5 class="content__charge text--cinema">
+            <h5 class="content__charge text--r">
               功夫<span class="charge__apply">×</span>美鈴
               <div class="charge__director">監督：レミリア</div>
             </h5>
@@ -118,7 +99,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_13.svg" alt="13（いちみ）" />
             </div>
-            <h5 class="content__charge text--cinema">
+            <h5 class="content__charge text--r">
               バーテン<span class="charge__apply">×</span>聖
               <div class="charge__director">監督：聖</div>
             </h5>
@@ -136,7 +117,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_kijima.svg" alt="きじま" />
             </div>
-            <h5 class="content__charge text--cinema">
+            <h5 class="content__charge text--r">
               特撮怪獣<span class="charge__apply">×</span>空&ラルバ
               <div class="charge__director">監督：守屋組</div>
             </h5>
@@ -154,7 +135,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_akimikan.svg" alt="あきみかん" />
             </div>
-            <h5 class="content__charge text--cinema">
+            <h5 class="content__charge text--r">
               殺人鬼<span class="charge__apply">×</span>パルスィ
               <div class="charge__director">監督：勇儀</div>
             </h5>
@@ -172,7 +153,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_tabun.svg" alt="たぶん" />
             </div>
-            <h5 class="content__charge text--cinema">
+            <h5 class="content__charge text--r">
               ホラー<span class="charge__apply">×</span>こいし
               <div class="charge__director">監督：聖</div>
             </h5>
@@ -190,7 +171,7 @@
             <div class="content__name">
               <img class="name__img lazyload" data-src="/gensou-cinema/images/name_iroiro.svg" alt="いろいろやる人" />
             </div>
-            <h5 class="content__charge text--cinema">プロローグ漫画／エピローグ小説</h5>
+            <h5 class="content__charge text--r">プロローグ漫画／エピローグ小説</h5>
             <div class="content__sns">
               <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=1158614">
                 <img class="sns--btn-img lazyload" data-src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
@@ -293,28 +274,30 @@
     </section>
     <!--overview-->
     <section class="overview">
-      <h3 class="overview__date">2019.8.12</h3>
-      <div class="overview__img">
-        <img class="img__vertical-text-left lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
-          alt="コミックマーケット96 月曜日 南フ40a" />
-        <img class="img__vertical-text-right lazyload" data-src="/gensou-cinema/images/text_benefit.svg"
-          alt="購入者特典あり〼" />
-        <img class="img__book-img lazyload" data-src="/gensou-cinema/images/hyoushi.png" alt="" />
-      </div>
-      <p class="overview__detail">
-        判型：B5サイズ<br />
-        仕様：36ページ<br />
-        頒布価格：¥1,000
-      </p>
-      <div class="overview__benefit">
-        <div class="benefit__title text--cinema">
-          <img class="title__icon lazyload" data-src="/gensou-cinema/images/icon_cinema-1.svg" alt="" />
-          <h4 class="title__text">購入者限定特典</h4>
+      <div class="overview__wrapper">
+        <h3 class="overview__date">2019.8.12</h3>
+        <div class="overview__img">
+          <img class="img__vertical-text-left lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
+            alt="コミックマーケット96 月曜日 南フ40a" />
+          <img class="img__vertical-text-right lazyload" data-src="/gensou-cinema/images/text_benefit.svg"
+            alt="購入者特典あり〼" />
+          <img class="img__book-img lazyload" data-src="/gensou-cinema/images/hyoushi.png" alt="" />
         </div>
-        <p class="benefit__list">
-          ・収録作品のLive2D（動くイラスト）が見れる！<br />
-          ・音楽がフルで聴ける！
+        <p class="overview__detail">
+          判型：B5サイズ<br />
+          仕様：36ページ<br />
+          頒布価格：¥1,000
         </p>
+        <div class="overview__benefit">
+          <div class="benefit__title text--cinema">
+            <img class="title__icon lazyload" data-src="/gensou-cinema/images/icon_cinema-1.svg" alt="" />
+            <h4 class="title__text">購入者限定特典</h4>
+          </div>
+          <p class="benefit__list">
+            ・収録作品のLive2D（動くイラスト）が見れる！<br />
+            ・音楽がフルで聴ける！
+          </p>
+        </div>
       </div>
     </section>
     </div>

@@ -13,14 +13,26 @@
     color: $black-color;
     font-size: 0.8rem;
 
+    @include media-pc {
+      font-size: 1.2rem;
+    }
+
     .content__logo {
       width: 130px;
       height: auto;
+
+      @include media-pc {
+        width: 180px;
+      }
     }
 
     .content__text {
       margin-top: 5px;
       color: #1e1310;
+
+      @include media-pc {
+        margin-top: 10px;
+      }
     }
   }
 
@@ -30,5 +42,10 @@
     margin-top: 10px;
     background-image: url(/gensou-cinema/images/cinema_line.svg);
     background-repeat: repeat-x;
+
+    @include media-pc {
+      height: 17px;
+      margin-top: 20px;
+    }
   }
 }

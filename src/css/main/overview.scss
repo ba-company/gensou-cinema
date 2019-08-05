@@ -7,9 +7,36 @@
   background-color: $bg-red-color;
   text-align: center;
 
+  @include media-pc {
+    padding: 140px 30px;
+  }
+
+  .overview__wrapper {
+    margin: 0 auto;
+
+    @include media-pc {
+      max-width: 690px;
+    }
+  }
+
+  .overview__date {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    text-indent: 1.5rem;
+
+    @include media-pc {
+      font-size: 2.5rem;
+    }
+  }
+
   .overview__img {
     position: relative;
     margin: 20px 0;
+
+    @include media-pc {
+      margin: 30px 0;
+      padding: 0 40px;
+    }
 
     .img__vertical-text-right {
       position: absolute;
@@ -18,6 +45,10 @@
       right: 0;
       margin: auto;
       width: 18px;
+
+      @include media-pc {
+        width: 30px;
+      }
     }
 
     .img__vertical-text-left {
@@ -27,17 +58,30 @@
       left: 0;
       margin: auto;
       width: 18px;
+
+      @include media-pc {
+        width: 30px;
+      }
     }
 
     .img__book-img {
       display: flex;
       width: 78%;
       margin: 0 auto;
+
+      @include media-pc {
+        width: 100%;
+        max-width: 550px;
+      }
     }
   }
 
   .overview__detail {
     line-height: 1.8;
+
+    @include media-pc {
+      font-size: 2rem;
+    }
   }
 
   .overview__benefit {
@@ -50,6 +94,12 @@
     background-position: center;
     text-align: left;
 
+    @include media-pc {
+      width: 550px;
+      margin: 40px auto 0;
+      padding: 40px 85px 40px 50px;
+    }
+
     .benefit__title {
       display: flex;
       align-items: flex-start;
@@ -58,16 +108,33 @@
       .title__icon {
         width: 20px;
         height: 20px;
+
+        @include media-pc {
+          width: 36px;
+          height: 36px;
+        }
       }
 
       .title__text {
         margin-left: 7px;
+
+        @include media-pc {
+          margin-left: 12px;
+          font-size: 2.5rem;
+          letter-spacing: 0.5rem;
+        }
       }
     }
 
     .benefit__list {
       margin-top: 8px;
       font-size: 1.25rem;
+
+      @include media-pc {
+        margin-top: 15px;
+        font-size: 1.8rem;
+        line-height: 1.8;
+      }
     }
   }
 }
