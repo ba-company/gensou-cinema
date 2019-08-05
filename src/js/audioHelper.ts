@@ -1,5 +1,6 @@
 const AUDIO_FILE_PATH = '/gensou-cinema/audios/zoku_inst.mp3';
 const AUDIO_PRELOAD = 'metadata';
+const AUDIO_VOLUME = 0.1;
 const AUDIO_IS_PLAYING_CLASSNAME = 'js-is-playing';
 
 export default class AudioHelper {
@@ -11,6 +12,7 @@ export default class AudioHelper {
     this.audio = document.createElement('audio');
     this.audio.src = AUDIO_FILE_PATH;
     this.audio.preload = AUDIO_PRELOAD;
+    this.audio.volume = AUDIO_VOLUME;
     this.wrapper = audioWrapperEl;
     this.isPlaying = false;
   }
