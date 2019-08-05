@@ -6,19 +6,21 @@ import throttle from 'lodash.throttle';
 import '../css/index.scss';
 import AudioHelper from './audioHelper';
 import calcScrollTop from './scrollHelper';
+import NProgressHelper from './nprogressHelper';
 
-const handler = () => {
-  // aos
+const sleep = (time: number) =>
+  new Promise(resolve => setTimeout(() => resolve(), time));
+
+const progress = new NProgressHelper();
+
+const DOMContentLoadedHandler = () => {
   AOS.init();
-
-  // audio
+  progress.start();
   const audioWrapperEl = document.getElementById('js-bgm');
   if (audioWrapperEl != null) {
     const audio = new AudioHelper(audioWrapperEl);
     audio.initialize();
   }
-
-  // header
   const headerEl = document.getElementById('js-header');
   const scrollHandler = () => {
     const scrollTop = calcScrollTop();
@@ -34,4 +36,16 @@ const handler = () => {
   window.addEventListener('scroll', throttle(scrollHandler));
 };
 
-window.addEventListener('DOMContentLoaded', handler);
+const LoadHandler = async () => {
+  await sleep(1500);
+  progress.done();
+  const loadingWrapperEl = document.querySelector('.js-loading-icon');
+  if (loadingWrapperEl != null) {
+    loadingWrapperEl.setAttribute('data-img-type', 'close');
+  }
+  await sleep(500);
+  document.body.setAttribute('data-is-loading', 'false');
+};
+
+window.addEventListener('DOMContentLoaded', DOMContentLoadedHandler);
+window.addEventListener('load', LoadHandler);

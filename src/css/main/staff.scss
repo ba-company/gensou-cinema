@@ -5,13 +5,10 @@
   position: relative;
   width: 100%;
   padding: 60px 20px;
-  background-image: url(/gensou-cinema/images/bg.svg);
-  background-size: 58px;
   z-index: 4;
 
   @include media-pc {
     padding: 140px 70px;
-    background-size: 80px;
   }
 
   .staff__list {

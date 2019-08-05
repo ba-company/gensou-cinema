@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body>
+<body data-is-loading="true">
   <!--header-->
   <header id="js-header" class="header" data-is-head="true">
     <div class="header-title"></div>
@@ -44,276 +44,286 @@
       </a>
     </div>
   </header>
-  <!--intro-->
-  <section class="intro">
-    <img class="intro__circle-space lazyload" data-src="/gensou-cinema/images/text_circle-space.svg" alt="コミックマーケット96 月曜日 南フ40a" />
-    <div class="intro__arrow">
-      <img class="arrow__img" src="/gensou-cinema/images/arrow.svg" alt="" />
-    </div>
-    <div class="intro__introduction">
-      <div class="introduction__wrapper" data-aos="flip-up"  data-aos-once="true" data-aos-delay="300">
-        <h2 class="wrapper__text text--cinema">
-          外の世界から持ち込まれた＜映画＞は<br />
-          幻想郷に新たな戦いを生み出した。<br /><br />
-          世はまさにポスト弾幕の時代――<br /><br />
-          絢爛たる<span data-ruby="シューティングゲーム">銀幕の決闘</span><br />
-          刮目して見よ！
-        </h2>
-        <span class="wrapper__catch">
-          ［イラスト×デザイン×ライブ2D　合同誌］
-        </span>
-        <img class="wrapper__logo" src="/gensou-cinema/images/logo.svg" alt="幻想シネマ" />
+  <div class="contents">
+    <!--intro-->
+    <section class="intro">
+      <img class="intro__circle-space lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
+        alt="コミックマーケット96 月曜日 南フ40a" />
+      <div class="intro__arrow">
+        <img class="arrow__img" src="/gensou-cinema/images/arrow.svg" alt="" />
       </div>
-    </div>
-  </section>
-  <!--main-->
-  <main class="main">
-    <!--staff-->
-    <section class="staff">
-      <div class="staff__list illustrator">
-        <div class="list__header">
-          <img class="header__icon" src="/gensou-cinema/images/icon_cinema.svg" alt="" />
-          <h3 class="header__post">制作陣</h3>
-          <h4 class="header__title text--cinema">参加者一覧</h4>
-        </div>
-        <!--illustrator-list-->
-        <div class="list__illustrator-list">
-          <!--茸下ふんぎ-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_fungi.svg" alt="茸下ふんぎ" />
-            </div>
-            <h5 class="content__charge text--r">
-              功夫<span class="charge__apply">×</span>美鈴
-              <div class="charge__director">監督：レミリア</div>
-            </h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/takeshitafungi">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=14257906">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <!--13（いちみ）-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_13.svg" alt="13（いちみ）" />
-            </div>
-            <h5 class="content__charge text--r">
-              バーテン<span class="charge__apply">×</span>聖
-              <div class="charge__director">監督：聖</div>
-            </h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/ichimi_131">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=40255">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <!--きじま-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_kijima.svg" alt="きじま" />
-            </div>
-            <h5 class="content__charge text--r">
-              特撮怪獣<span class="charge__apply">×</span>空&ラルバ
-              <div class="charge__director">監督：守屋組</div>
-            </h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/kijimappoi">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=184722">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <!--あきみかん-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_akimikan.svg" alt="あきみかん" />
-            </div>
-            <h5 class="content__charge text--r">
-              殺人鬼<span class="charge__apply">×</span>パルスィ
-              <div class="charge__director">監督：勇儀</div>
-            </h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/gomi_kann">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=4591634">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <!--たぶん-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_tabun.svg" alt="たぶん" />
-            </div>
-            <h5 class="content__charge text--r">
-              ホラー<span class="charge__apply">×</span>こいし
-              <div class="charge__director">監督：聖</div>
-            </h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/den_tbn">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=1579138">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <!--いろいろやる人-->
-          <div class="illustrator-list__content">
-            <div class="content__name">
-              <img class="name__img lazyload" data-src="/gensou-cinema/images/name_iroiro.svg" alt="いろいろやる人" />
-            </div>
-            <h5 class="content__charge text--r">プロローグ漫画／エピローグ小説</h5>
-            <div class="content__sns">
-              <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/iro2do">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
-              </a>
-              <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=1341860">
-                <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--music-->
-      <div class="border"></div>
-      <div class="staff__list misic">
-        <div class="list__header">
-          <img class="header__icon" src="/gensou-cinema/images/icon_music.svg" alt="" />
-          <h3 class="header__post">音楽</h3>
-          <h4 class="header__title text--cinema">コラボレーション楽曲</h4>
-        </div>
-        <div class="list__name">
-          <img class="name__logo-touhoujihen lazyload" data-src="/gensou-cinema/images/logo_touhoujihen.svg"
-            alt="東方事変" />
-          <h6 class="name__music-title">「俗-zoku-」</h6>
-          <h6 class="name__music-original">原曲:風神少女</h6>
-        </div>
-        <div class="list__sns">
-          <a class="sns__staff-btn sns--btn" href="http://touhoujihen.net/">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_hp.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://twitter.com/Sally_NSY">
-            <span class="staff-btn__name">NSY</span>
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://twitter.com/StE_IZNA">
-            <span class="staff-btn__name">IZUNA</span>
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
-          </a>
-        </div>
-      </div>
-      <!--live2d-->
-      <div class="border"></div>
-      <div class="staff__list live2d">
-        <div class="list__header">
-          <img class="header__icon" src="/gensou-cinema/images/icon_live2d.svg" alt="" />
-          <h3 class="header__post">撮影</h3>
-          <h4 class="header__title text--cinema">Live2D</h4>
-        </div>
-        <h5 class="list__name">茸下ふんぎ</h5>
-        <div class="list__sns">
-          <a class="sns__staff-btn sns--btn" href="https://twitter.com/TakeshitaFungi">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=14257906">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
-          </a>
-        </div>
-      </div>
-      <!--direction-->
-      <div class="border"></div>
-      <div class="staff__list direction">
-        <div class="list__header">
-          <h3 class="header__post">制作進行</h3>
-          <h4 class="header__title text--cinema">デザイン／ディレクション</h4>
-        </div>
-        <div class="list__name">
-          <img class="name__logo-mmy lazyload" data-src="/gensou-cinema/images/logo_mmy.svg" alt="mmy" />
-        </div>
-        <div class="list__sns">
-          <a class="sns__staff-btn sns--btn" href="https://twitter.com/s48969">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=1024475">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
-          </a>
-        </div>
-      </div>
-      <!--webdesign-->
-      <div class="border"></div>
-      <div class="staff__list webdesign">
-        <div class="list__header">
-          <h3 class="header__post">広報</h3>
-          <h4 class="header__title text--cinema">WEBデザイン</h4>
-        </div>
-        <div class="list__name">
-          <img class="name__logo-ichitasuichiha lazyload" data-src="/gensou-cinema/images/logo_ichitasuichiha.svg"
-            alt="いちたすいちは" />
-        </div>
-        <div class="list__sns">
-          <a class="sns__staff-btn sns--btn" href="https://twitter.com/nig_18">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=1158614">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
-          </a>
-          <a class="sns__staff-btn sns--btn" href="https://ichihachi018.tumblr.com/">
-            <img class="sns--btn-img" src="/gensou-cinema/images/icon_tumblr.svg" alt="" />
-          </a>
+      <div class="intro__introduction">
+        <div class="introduction__wrapper" data-aos="flip-up" data-aos-once="true" data-aos-delay="300">
+          <h2 class="wrapper__text text--cinema">
+            外の世界から持ち込まれた＜映画＞は<br />
+            幻想郷に新たな戦いを生み出した。<br /><br />
+            世はまさにポスト弾幕の時代――<br /><br />
+            絢爛たる<span data-ruby="シューティングゲーム">銀幕の決闘</span><br />
+            刮目して見よ！
+          </h2>
+          <span class="wrapper__catch">
+            ［イラスト×デザイン×ライブ2D　合同誌］
+          </span>
+          <img class="wrapper__logo" src="/gensou-cinema/images/logo.svg" alt="幻想シネマ" />
         </div>
       </div>
     </section>
-    <!--overview-->
-    <section class="overview">
-      <div class="overview__wrapper">
-        <h3 class="overview__date">2019.8.12</h3>
-        <div class="overview__img">
-          <img class="img__vertical-text-left lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
-            alt="コミックマーケット96 月曜日 南フ40a" />
-          <img class="img__vertical-text-right lazyload" data-src="/gensou-cinema/images/text_benefit.svg"
-            alt="購入者特典あり〼" />
-          <img class="img__book-img lazyload" data-src="/gensou-cinema/images/hyoushi.png" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" alt="" />
-        </div>
-        <p class="overview__detail">
-          判型：B5サイズ<br />
-          仕様：36ページ<br />
-          頒布価格：¥1,000
-        </p>
-        <div class="overview__benefit">
-          <div class="benefit__title text--cinema">
-            <img class="title__icon" src="/gensou-cinema/images/icon_cinema-1.svg" alt="" />
-            <h4 class="title__text">購入者限定特典</h4>
+    <!--main-->
+    <main class="main">
+      <!--staff-->
+      <section class="staff bg-pattern">
+        <div class="staff__list illustrator">
+          <div class="list__header">
+            <img class="header__icon" src="/gensou-cinema/images/icon_cinema.svg" alt="" />
+            <h3 class="header__post">制作陣</h3>
+            <h4 class="header__title text--cinema">参加者一覧</h4>
           </div>
-          <p class="benefit__list">
-            ・収録作品のLive2D（動くイラスト）が見れる！<br />
-            ・楽曲がフルで聴ける！
+          <!--illustrator-list-->
+          <div class="list__illustrator-list">
+            <!--茸下ふんぎ-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_fungi.svg" alt="茸下ふんぎ" />
+              </div>
+              <h5 class="content__charge text--r">
+                功夫<span class="charge__apply">×</span>美鈴
+                <div class="charge__director">監督：レミリア</div>
+              </h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/takeshitafungi">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=14257906">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!--13（いちみ）-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_13.svg" alt="13（いちみ）" />
+              </div>
+              <h5 class="content__charge text--r">
+                バーテン<span class="charge__apply">×</span>聖
+                <div class="charge__director">監督：聖</div>
+              </h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/ichimi_131">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=40255">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!--きじま-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_kijima.svg" alt="きじま" />
+              </div>
+              <h5 class="content__charge text--r">
+                特撮怪獣<span class="charge__apply">×</span>空&ラルバ
+                <div class="charge__director">監督：守屋組</div>
+              </h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/kijimappoi">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=184722">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!--あきみかん-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_akimikan.svg" alt="あきみかん" />
+              </div>
+              <h5 class="content__charge text--r">
+                殺人鬼<span class="charge__apply">×</span>パルスィ
+                <div class="charge__director">監督：勇儀</div>
+              </h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/gomi_kann">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=4591634">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!--たぶん-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_tabun.svg" alt="たぶん" />
+              </div>
+              <h5 class="content__charge text--r">
+                ホラー<span class="charge__apply">×</span>こいし
+                <div class="charge__director">監督：聖</div>
+              </h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/den_tbn">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=1579138">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!--いろいろやる人-->
+            <div class="illustrator-list__content">
+              <div class="content__name">
+                <img class="name__img lazyload" data-src="/gensou-cinema/images/name_iroiro.svg" alt="いろいろやる人" />
+              </div>
+              <h5 class="content__charge text--r">プロローグ漫画／エピローグ小説</h5>
+              <div class="content__sns">
+                <a class="sns__illustrator-btn sns--btn" href="https://twitter.com/iro2do">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-2.svg" alt="" />
+                </a>
+                <a class="sns__illustrator-btn sns--btn" href="https://www.pixiv.net/member.php?id=1341860">
+                  <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--music-->
+        <div class="border"></div>
+        <div class="staff__list misic">
+          <div class="list__header">
+            <img class="header__icon" src="/gensou-cinema/images/icon_music.svg" alt="" />
+            <h3 class="header__post">音楽</h3>
+            <h4 class="header__title text--cinema">コラボレーション楽曲</h4>
+          </div>
+          <div class="list__name">
+            <img class="name__logo-touhoujihen lazyload" data-src="/gensou-cinema/images/logo_touhoujihen.svg"
+              alt="東方事変" />
+            <h6 class="name__music-title">「俗-zoku-」</h6>
+            <h6 class="name__music-original">原曲:風神少女</h6>
+          </div>
+          <div class="list__sns">
+            <a class="sns__staff-btn sns--btn" href="http://touhoujihen.net/">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_hp.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://twitter.com/Sally_NSY">
+              <span class="staff-btn__name">NSY</span>
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://twitter.com/StE_IZNA">
+              <span class="staff-btn__name">IZUNA</span>
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!--live2d-->
+        <div class="border"></div>
+        <div class="staff__list live2d">
+          <div class="list__header">
+            <img class="header__icon" src="/gensou-cinema/images/icon_live2d.svg" alt="" />
+            <h3 class="header__post">撮影</h3>
+            <h4 class="header__title text--cinema">Live2D</h4>
+          </div>
+          <h5 class="list__name">茸下ふんぎ</h5>
+          <div class="list__sns">
+            <a class="sns__staff-btn sns--btn" href="https://twitter.com/TakeshitaFungi">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=14257906">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!--direction-->
+        <div class="border"></div>
+        <div class="staff__list direction">
+          <div class="list__header">
+            <h3 class="header__post">制作進行</h3>
+            <h4 class="header__title text--cinema">デザイン／ディレクション</h4>
+          </div>
+          <div class="list__name">
+            <img class="name__logo-mmy lazyload" data-src="/gensou-cinema/images/logo_mmy.svg" alt="mmy" />
+          </div>
+          <div class="list__sns">
+            <a class="sns__staff-btn sns--btn" href="https://twitter.com/s48969">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=1024475">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!--webdesign-->
+        <div class="border"></div>
+        <div class="staff__list webdesign">
+          <div class="list__header">
+            <h3 class="header__post">広報</h3>
+            <h4 class="header__title text--cinema">WEBデザイン</h4>
+          </div>
+          <div class="list__name">
+            <img class="name__logo-ichitasuichiha lazyload" data-src="/gensou-cinema/images/logo_ichitasuichiha.svg"
+              alt="いちたすいちは" />
+          </div>
+          <div class="list__sns">
+            <a class="sns__staff-btn sns--btn" href="https://twitter.com/nig_18">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_twitter-1.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://www.pixiv.net/member.php?id=1158614">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_pixiv-1.svg" alt="" />
+            </a>
+            <a class="sns__staff-btn sns--btn" href="https://ichihachi018.tumblr.com/">
+              <img class="sns--btn-img" src="/gensou-cinema/images/icon_tumblr.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--overview-->
+      <section class="overview">
+        <div class="overview__wrapper">
+          <h3 class="overview__date">2019.8.12</h3>
+          <div class="overview__img">
+            <img class="img__vertical-text-left lazyload" data-src="/gensou-cinema/images/text_circle-space.svg"
+              alt="コミックマーケット96 月曜日 南フ40a" />
+            <img class="img__vertical-text-right lazyload" data-src="/gensou-cinema/images/text_benefit.svg"
+              alt="購入者特典あり〼" />
+            <img class="img__book-img lazyload" data-src="/gensou-cinema/images/hyoushi.png" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-once="true" alt="" />
+          </div>
+          <p class="overview__detail">
+            判型：B5サイズ<br />
+            仕様：36ページ<br />
+            頒布価格：¥1,000
           </p>
+          <div class="overview__benefit">
+            <div class="benefit__title text--cinema">
+              <img class="title__icon" src="/gensou-cinema/images/icon_cinema-1.svg" alt="" />
+              <h4 class="title__text">購入者限定特典</h4>
+            </div>
+            <p class="benefit__list">
+              ・収録作品のLive2D（動くイラスト）が見れる！<br />
+              ・楽曲がフルで聴ける！
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!--footer-->
+      <footer class="footer">
+        <div class="footer__content">
+          <img class="content__logo lazyload" data-src="/gensou-cinema/images/logo_ba-company.svg" alt="天狗広告社" />
+          <div class="content__text">
+            ©2019 BA-CAMPANY
+          </div>
+        </div>
+        <div class="footer__cinema-line"></div>
+      </footer>
+    </main>
+  </div>
+  <div class="loading bg-pattern">
+    <div class="loading__content">
+      <div class="loading__icon js-loading-icon" data-img-type="open"></div>
+      <span class="text--cinema">このサイトは音楽が流せます</span>
     </div>
-    <!--footer-->
-    <footer class="footer">
-      <div class="footer__content">
-        <img class="content__logo lazyload" data-src="/gensou-cinema/images/logo_ba-company.svg" alt="天狗広告社" />
-        <div class="content__text">
-          ©2019 BA-CAMPANY
-        </div>
-      </div>
-      <div class="footer__cinema-line"></div>
-    </footer>
-  </main>
+    <div id="js-progress" class="loading__progress" aria-hidden="true"></div>
+  </div>
 </body>
 
 </html>

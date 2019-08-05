@@ -1,8 +1,10 @@
 @import '~sanitize.css/sanitize.css';
 @import './global.scss';
+@import './loading.scss';
 @import './header/index.scss';
 @import './intro/index.scss';
 @import './main/index.scss';
 @import './footer/index.scss';
 @import './back_to_top.scss';
 @import './utils/lazyload.scss';
+@import './utils//nprogress.scss';

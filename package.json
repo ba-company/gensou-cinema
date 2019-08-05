@@ -49,6 +49,7 @@
     "aos": "^2.3.4",
     "lazysizes": "^5.1.0",
     "lodash.throttle": "^4.1.1",
+    "nprogress": "^0.2.0",
     "sanitize.css": "^11.0.0"
   }
 }

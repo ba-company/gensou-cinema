@@ -10,12 +10,28 @@ body {
   position: relative;
   height: 100%;
   color: $black-color;
+  background-color: $base-color;
   font-size: 1.4rem; // =14px
   font-family: fot-tsukuardgothic-std, -apple-system, BlinkMacSystemFont,
     'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
     'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
   font-weight: 700;
   font-style: normal;
+
+  > .contents {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+  }
+
+  &[data-is-loading='false'] {
+    > .contents {
+      opacity: 1;
+    }
+
+    > .loading {
+      display: none;
+    }
+  }
 }
 
 a {
@@ -124,5 +140,14 @@ ol {
   @include media-pc {
     width: 26px;
     height: 26px;
+  }
+}
+
+.bg-pattern {
+  background-image: url(/gensou-cinema/images/bg.svg);
+  background-size: 58px;
+
+  @include media-pc {
+    background-size: 80px;
   }
 }
