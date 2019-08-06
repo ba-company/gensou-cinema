@@ -62,7 +62,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.join(src, '/html/ayayayalive2d/index.html'),
-      filename: 'ayayayalive2d/index.html'
+      filename: 'ayayayalive2d/index.html',
+      inject: false
     }),
     new MiniCssExtractPlugin({
       filename: 'app.min.css'
