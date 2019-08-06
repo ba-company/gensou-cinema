@@ -50,7 +50,7 @@ const LoadHandler = async () => {
   if (loadingBgEl != null) {
     loadingBgEl.setAttribute('data-is-loading', 'false');
   }
-  await sleep(1000);
+  await sleep(650);
   new Vivus(
     'js-logo',
     { type: 'delayed', file: '/gensou-cinema/images/logo.svg' },

@@ -67,6 +67,7 @@
 
       @include media-pc {
         max-width: 550px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 0 18px;
       }
     }
   }
