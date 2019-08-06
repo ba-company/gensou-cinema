@@ -25,8 +25,8 @@
         height: 34px;
 
         @include media-pc {
-          width: 45px;
-          height: 45px;
+          width: 43px;
+          height: 43px;
         }
       }
 
@@ -39,7 +39,7 @@
 
         @include media-pc {
           margin-top: 20px;
-          font-size: 2.8rem;
+          font-size: 2.6rem;
           letter-spacing: 0.8rem;
           text-indent: 0.8rem;
         }
@@ -52,7 +52,7 @@
 
         @include media-pc {
           margin-top: 10px;
-          font-size: 1.3rem;
+          font-size: 1.25rem;
         }
       }
     }
@@ -69,12 +69,30 @@
         position: relative;
         margin-top: 20px;
         border: 2px solid $black-color;
+        border-bottom: none;
         box-sizing: border-box;
 
         @include media-pc {
           min-width: 600px;
           margin-top: 30px;
           border: 3px solid $black-color;
+        }
+
+        .content__host {
+          position: absolute;
+          top: -12px;
+          left: 8px;
+          width: 18px;
+          padding: 5px 0;
+          background-color: #aa0f0a;
+          animation: show-left-to-right 1s ease-out;
+          z-index: 3;
+
+          @include media-pc {
+            top: -18px;
+            left: 20px;
+            width: 26px;
+          }
         }
 
         .content__name {
@@ -195,7 +213,7 @@
       letter-spacing: 0.3rem;
 
       @include media-pc {
-        margin: 60px 0;
+        margin: 55px 0;
         font-size: 3rem;
       }
 
@@ -241,7 +259,7 @@
 
         @include media-pc {
           margin-top: 5px;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
       }
     }
