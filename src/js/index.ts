@@ -1,3 +1,5 @@
+// @ts-ignore
+import AOS from 'aos';
 import 'lazysizes';
 // @ts-ignore
 import throttle from 'lodash.throttle';
@@ -6,6 +8,9 @@ import AudioHelper from './audioHelper';
 import calcScrollTop from './scrollHelper';
 
 const handler = () => {
+  // aos
+  AOS.init();
+
   // audio
   const audioWrapperEl = document.getElementById('js-bgm');
   if (audioWrapperEl != null) {

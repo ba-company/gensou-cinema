@@ -78,14 +78,6 @@ ol {
   }
 }
 
-.arrow {
-  width: 12px;
-
-  @include media-pc {
-    width: 16px;
-  }
-}
-
 .border {
   width: 85%;
   height: 1px;
