@@ -9,7 +9,7 @@
     "build": "NODE_ENV=production webpack --config webpack.prod.js",
     "test": "run-p lint:*",
     "lint:js": "tsc --noEmit",
-    "lint:css": "stylelint './src/scss/**/*.scss'"
+    "lint:css": "stylelint './src/css/**/*.scss'"
   },
   "husky": {
     "hooks": {
@@ -50,6 +50,7 @@
     "lazysizes": "^5.1.0",
     "lodash.throttle": "^4.1.1",
     "nprogress": "^0.2.0",
-    "sanitize.css": "^11.0.0"
+    "sanitize.css": "^11.0.0",
+    "vivus": "^0.4.4"
   }
 }

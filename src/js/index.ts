@@ -2,6 +2,8 @@
 import AOS from 'aos';
 import 'lazysizes';
 // @ts-ignore
+import Vivus from 'vivus';
+// @ts-ignore
 import throttle from 'lodash.throttle';
 import '../css/index.scss';
 import AudioHelper from './audioHelper';
@@ -25,7 +27,6 @@ const DOMContentLoadedHandler = () => {
   const scrollHandler = () => {
     const scrollTop = calcScrollTop();
     const threshold = window.innerHeight;
-    console.log({ scrollTop, threshold });
     if (headerEl != null) {
       headerEl.setAttribute(
         'data-is-head',
@@ -45,6 +46,13 @@ const LoadHandler = async () => {
   }
   await sleep(500);
   document.body.setAttribute('data-is-loading', 'false');
+  new Vivus(
+    'js-logo',
+    { type: 'delayed', file: '/gensou-cinema/images/logo.svg' },
+    (e: any) => {
+      e.parentEl.setAttribute('data-is-complete', 'true');
+    }
+  );
 };
 
 window.addEventListener('DOMContentLoaded', DOMContentLoadedHandler);

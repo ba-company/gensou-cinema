@@ -20,17 +20,16 @@
   }
 
   .header-title {
-    width: 160px;
+    width: 120px;
     height: 100%;
     background-image: url(/gensou-cinema/images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    transform: scale(1);
-    transform-origin: left top;
-    transition: transform 0.2s ease-out;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
 
     @include media-pc {
-      width: 420px;
+      width: 300px;
       background-image: url(/gensou-cinema/images/logo_icon.svg);
     }
   }
@@ -78,9 +77,8 @@
   }
 
   &[data-is-head='false'] {
-    > .header-title,
-    > .header-btn {
-      transform: scale(0.75);
+    > .header-title {
+      opacity: 1;
     }
   }
 }

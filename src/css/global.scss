@@ -19,6 +19,7 @@ body {
   font-style: normal;
 
   > .contents {
+    height: 100%;
     opacity: 0;
     transition: opacity 2s ease-out;
   }
