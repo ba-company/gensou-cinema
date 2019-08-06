@@ -20,9 +20,14 @@ body {
 
   > .contents {
     height: 100%;
+    overflow: hidden;
   }
 
   &[data-is-loading='false'] {
+    > .contents {
+      overflow: visible;
+    }
+
     > .loading {
       display: none;
     }
