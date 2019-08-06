@@ -40,12 +40,17 @@ const DOMContentLoadedHandler = () => {
 const LoadHandler = async () => {
   await sleep(1500);
   progress.done();
-  const loadingWrapperEl = document.querySelector('.js-loading-icon');
-  if (loadingWrapperEl != null) {
-    loadingWrapperEl.setAttribute('data-img-type', 'close');
+  const loadingIconEl = document.querySelector('.js-loading-icon');
+  if (loadingIconEl != null) {
+    loadingIconEl.setAttribute('data-img-type', 'close');
   }
   await sleep(500);
   document.body.setAttribute('data-is-loading', 'false');
+  const loadingBgEl = document.querySelector('.js-loading-bg');
+  if (loadingBgEl != null) {
+    loadingBgEl.setAttribute('data-is-loading', 'false');
+  }
+  await sleep(1000);
   new Vivus(
     'js-logo',
     { type: 'delayed', file: '/gensou-cinema/images/logo.svg' },

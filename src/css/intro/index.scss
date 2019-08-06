@@ -45,7 +45,7 @@
   background-image: url(/gensou-cinema/images/main_visual.png);
   background-repeat: no-repeat;
   background-size: cover;
-  animation: bg-image 40s linear;
+  animation: bg-image 40s linear 2s;
   animation-fill-mode: forwards;
 
   @include media-pc {

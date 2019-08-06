@@ -20,15 +20,9 @@ body {
 
   > .contents {
     height: 100%;
-    opacity: 0;
-    transition: opacity 2s ease-out;
   }
 
   &[data-is-loading='false'] {
-    > .contents {
-      opacity: 1;
-    }
-
     > .loading {
       display: none;
     }
@@ -145,6 +139,7 @@ ol {
 }
 
 .bg-pattern {
+  background-color: $base-color;
   background-image: url(/gensou-cinema/images/bg.svg);
   background-size: 58px;
 
