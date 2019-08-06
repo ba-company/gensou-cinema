@@ -73,7 +73,6 @@
         box-sizing: border-box;
 
         @include media-pc {
-          min-width: 600px;
           margin-top: 30px;
           border: 3px solid $black-color;
         }
@@ -118,6 +117,7 @@
             @include media-pc {
               left: 20px;
               bottom: 10px;
+              max-width: 68%;
               height: 75px;
               filter: none;
             }
@@ -157,12 +157,13 @@
           background-color: $black-color;
           color: $base-color;
           font-size: 1.18rem;
+          line-height: 1;
           text-align: left;
 
           @include media-pc {
             height: 40px;
-            padding-left: 20px;
-            font-size: 2.3rem;
+            padding-left: 15px;
+            font-size: 2rem;
           }
 
           .charge__apply {
@@ -189,7 +190,7 @@
 
           @include media-pc {
             bottom: 15px;
-            right: 20px;
+            right: 15px;
           }
 
           .sns__illustrator-btn {

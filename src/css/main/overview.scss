@@ -29,20 +29,19 @@
   }
 
   .overview__img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     margin: 20px 0;
 
     @include media-pc {
       margin: 30px 0;
-      padding: 0 40px;
     }
 
     .img__vertical-text-right {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
+      flex-shrink: 0;
+      margin-left: 15px;
       width: 18px;
 
       @include media-pc {
@@ -51,11 +50,8 @@
     }
 
     .img__vertical-text-left {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
+      flex-shrink: 0;
+      margin-right: 15px;
       width: 18px;
 
       @include media-pc {
@@ -65,11 +61,11 @@
 
     .img__book-img {
       display: flex;
-      width: 78%;
+      width: 100%;
       margin: 0 auto;
+      box-shadow: rgba(0, 0, 0, 0.15) 0 10px 20px, rgba(0, 0, 0, 0.2) 0 6px 6px;
 
       @include media-pc {
-        width: 100%;
         max-width: 550px;
       }
     }
@@ -83,9 +79,19 @@
     }
   }
 
+  .overview__benefit-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+    @include media-pc {
+      margin-top: 40px;
+      padding: 0 45px;
+    }
+  }
+
   .overview__benefit {
-    width: 90%;
-    margin: 20px auto 0;
+    width: 100%;
     padding: 12px 40px 12px 20px;
     background-image: url(/gensou-cinema/images/ticket_box.svg);
     background-repeat: no-repeat;
@@ -94,8 +100,8 @@
     text-align: left;
 
     @include media-pc {
-      width: 550px;
-      margin: 40px auto 0;
+      max-width: 550px;
+      margin: 0 auto;
       padding: 40px 85px 40px 50px;
     }
 
@@ -126,6 +132,7 @@
     }
 
     .benefit__list {
+      padding-right: 5px;
       margin-top: 8px;
       font-size: 1.25rem;
 
