@@ -1,5 +1,15 @@
 @import './variables/color.scss';
 
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .loading {
   display: flex;
   flex-direction: column;
@@ -15,6 +25,14 @@
   z-index: 1030;
   pointer-events: none;
 
+  .loading__icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-size: 50px;
+    background-repeat: no-repeat;
+  }
+
   .loading__content {
     padding: 0 0 15px;
     color: $brown-color;
@@ -24,21 +42,20 @@
     @include media-pc {
       font-size: 1.4rem;
     }
-  }
 
-  .loading__icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    background-size: 50px;
-    background-repeat: no-repeat;
-
-    &[data-img-type='open'] {
-      background-image: url('/gensou-cinema/images/anime_cinema-1.svg');
+    &[data-type='open'] {
+      .loading__icon {
+        background-image: url('/gensou-cinema/images/anime_cinema-1.svg');
+      }
     }
 
-    &[data-img-type='close'] {
-      background-image: url('/gensou-cinema/images/anime_cinema-2.svg');
+    &[data-type='close'] {
+      animation: fade-out 0.75s ease-out;
+      animation-fill-mode: forwards;
+
+      .loading__icon {
+        background-image: url('/gensou-cinema/images/anime_cinema-2.svg');
+      }
     }
   }
 

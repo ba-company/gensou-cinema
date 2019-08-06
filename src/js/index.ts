@@ -40,11 +40,11 @@ const DOMContentLoadedHandler = () => {
 const LoadHandler = async () => {
   await sleep(1500);
   progress.done();
-  const loadingIconEl = document.querySelector('.js-loading-icon');
-  if (loadingIconEl != null) {
-    loadingIconEl.setAttribute('data-img-type', 'close');
+  const loadingContentEl = document.querySelector('.js-loading-content');
+  if (loadingContentEl != null) {
+    loadingContentEl.setAttribute('data-type', 'close');
   }
-  await sleep(500);
+  await sleep(750);
   document.body.setAttribute('data-is-loading', 'false');
   const loadingBgEl = document.querySelector('.js-loading-bg');
   if (loadingBgEl != null) {
