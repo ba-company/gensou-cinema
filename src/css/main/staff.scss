@@ -82,8 +82,8 @@
           position: absolute;
           top: -12px;
           left: 8px;
-          width: 18px;
-          padding: 5px 0;
+          width: 20px;
+          padding: 5px 2px;
           background-color: #aa0f0a;
           animation: show-left-to-right 1s ease-out;
           z-index: 3;
@@ -91,7 +91,7 @@
           @include media-pc {
             top: -18px;
             left: 20px;
-            width: 26px;
+            width: 30px;
           }
         }
 
@@ -100,10 +100,11 @@
           width: 100%;
           height: 90px;
           background-size: cover;
-          background-position: center;
+          background-position: 70% center;
 
           @include media-pc {
             height: 160px;
+            background-position: center;
           }
 
           .name__img {
@@ -112,17 +113,20 @@
             bottom: 5px;
             width: auto;
             height: 32px;
+            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.8));
 
             @include media-pc {
               left: 20px;
               bottom: 10px;
               height: 75px;
+              filter: none;
             }
           }
         }
 
         .content__name-fungi {
           background-image: url(/gensou-cinema/images/sample_fungi.jpg);
+          background-position: 48% center;
         }
 
         .content__name-13 {
