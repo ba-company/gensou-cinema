@@ -18,6 +18,11 @@
   .loading__content {
     padding: 0 0 15px;
     color: $brown-color;
+    font-size: 1.1rem;
+
+    @include media-pc {
+      font-size: 1.4rem;
+    }
   }
 
   .loading__icon {

@@ -80,7 +80,6 @@
           position: relative;
           width: 100%;
           height: 90px;
-          background-image: url(/gensou-cinema/images/main_visual.png);
           background-size: cover;
 
           @include media-pc {
@@ -100,6 +99,30 @@
               height: 75px;
             }
           }
+        }
+
+        .content__name-fungi {
+          background-image: url(/gensou-cinema/images/sample_fungi.jpg);
+        }
+
+        .content__name-13 {
+          background-image: url(/gensou-cinema/images/sample_13.jpg);
+        }
+
+        .content__name-kijima {
+          background-image: url(/gensou-cinema/images/sample_kijima.jpg);
+        }
+
+        .content__name-akimikan {
+          background-image: url(/gensou-cinema/images/sample_akimikan.jpg);
+        }
+
+        .content__name-tabun {
+          background-image: url(/gensou-cinema/images/sample_tabun.jpg);
+        }
+
+        .content__name-iroiro {
+          background-image: url(/gensou-cinema/images/sample_iroiro.jpg);
         }
 
         .content__charge {
