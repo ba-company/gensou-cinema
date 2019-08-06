@@ -3,10 +3,12 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   position: relative;
+  height: 100%;
   color: $black-color;
   font-size: 1.4rem; // =14px
   font-family: fot-tsukuardgothic-std, -apple-system, BlinkMacSystemFont,
