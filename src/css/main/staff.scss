@@ -224,9 +224,12 @@
 
       &.list__name--secondary {
         margin-top: 60px;
+        font-size: 2.25rem;
+        letter-spacing: 0.3rem;
 
         @include media-pc {
           margin-top: 90px;
+          font-size: 2.8rem;
         }
       }
 
