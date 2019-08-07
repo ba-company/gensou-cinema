@@ -84,27 +84,63 @@
     position: relative;
     width: 100%;
     margin-top: 20px;
-    padding: 0 15px;
+    background-color: $black-color;
+    text-align: left;
+    padding-right: 30px;
 
     @include media-pc {
-      margin-top: 40px;
-      padding: 0 45px;
+      margin: 40px auto 0;
+      padding-right: 50px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      width: 20px;
+      height: 42px;
+      background: $bg-red-color;
+      border-radius: 50%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      @include media-pc {
+        left: -15px;
+        width: 24px;
+        height: 60px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -11px;
+      width: 20px;
+      height: 42px;
+      background: $bg-red-color;
+      border-radius: 50%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      @include media-pc {
+        right: -15px;
+        width: 24px;
+        height: 60px;
+      }
     }
   }
 
   .overview__benefit {
     width: 100%;
-    padding: 12px 40px 12px 20px;
-    background-image: url(/gensou-cinema/images/ticket_box.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: left;
+    margin: 0;
+    padding: 10px 20px;
+    border-right: 1px dashed $base-color;
 
     @include media-pc {
-      max-width: 550px;
-      margin: 0 auto;
-      padding: 40px 85px 40px 50px;
+      padding: 20px 40px;
+      border-right: 2px dashed $base-color;
     }
 
     .benefit__title {
@@ -134,14 +170,33 @@
     }
 
     .benefit__list {
-      padding-right: 12px;
       margin-top: 8px;
       font-size: 1.25rem;
 
       @include media-pc {
         margin-top: 15px;
         font-size: 1.8rem;
-        line-height: 1.8;
+        line-height: 1.65;
+      }
+
+      .list__comment {
+        font-size: 1rem;
+        display: block;
+
+        @include media-pc {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .benefit__access {
+      margin-top: 5px;
+      color: $brown-color;
+      font-size: 1rem;
+
+      @include media-pc {
+        margin-top: 10px;
+        font-size: 1.5rem;
       }
     }
   }
