@@ -2,7 +2,7 @@
 @import '../variables/color.scss';
 
 .overview {
-  padding: 60px 15px 80px;
+  padding: 80px 15px 80px;
   color: $base-color;
   background-color: $bg-red-color;
   text-align: center;
@@ -74,6 +74,7 @@
 
   .overview__detail {
     line-height: 1.8;
+    font-size: 1.3rem;
 
     @include media-pc {
       font-size: 2rem;
@@ -83,22 +84,24 @@
   .overview__benefit-wrapper {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    max-width: 340px;
+    margin: 25px auto 0;
+    padding-right: 28px;
     background-color: $black-color;
     text-align: left;
-    padding-right: 30px;
 
     @include media-pc {
       width: 80%;
+      max-width: none;
       margin: 40px auto 0;
       padding-right: 50px;
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
-      left: -11px;
-      width: 20px;
+      left: -10px;
+      width: 16px;
       height: 42px;
       background: $bg-red-color;
       border-radius: 50%;
@@ -114,10 +117,10 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
-      right: -11px;
-      width: 20px;
+      right: -10px;
+      width: 18px;
       height: 42px;
       background: $bg-red-color;
       border-radius: 50%;
@@ -136,7 +139,7 @@
   .overview__benefit {
     width: 100%;
     margin: 0;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-right: 1px dashed $base-color;
 
     @include media-pc {
@@ -172,7 +175,7 @@
 
     .benefit__list {
       margin-top: 8px;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
 
       @include media-pc {
         margin-top: 15px;
@@ -193,7 +196,7 @@
     .benefit__access {
       margin-top: 5px;
       color: $brown-color;
-      font-size: 1rem;
+      font-size: 1.05rem;
 
       @include media-pc {
         margin-top: 10px;

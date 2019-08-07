@@ -4,7 +4,7 @@
 .staff {
   position: relative;
   width: 100%;
-  padding: 60px 20px;
+  padding: 80px 20px;
   z-index: 4;
 
   @include media-pc {
@@ -21,8 +21,8 @@
 
     .list__header {
       .header__icon {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
 
         @include media-pc {
           width: 43px;
@@ -156,7 +156,7 @@
           padding-left: 3px;
           background-color: $black-color;
           color: $base-color;
-          font-size: 1.18rem;
+          font-size: 1.19rem;
           line-height: 1;
           text-align: left;
 
@@ -174,10 +174,12 @@
             font-size: 1rem;
             margin-left: 8px;
             letter-spacing: 0;
+            transform: scale(0.9);
 
             @include media-pc {
               font-size: 1.5rem;
               margin-left: 18px;
+              transform: none;
             }
           }
         }
@@ -224,8 +226,8 @@
 
       &.list__name--secondary {
         margin-top: 60px;
-        font-size: 2.25rem;
-        letter-spacing: 0.3rem;
+        font-size: 2.2rem;
+        letter-spacing: 0.25rem;
 
         @include media-pc {
           margin-top: 90px;
@@ -234,7 +236,7 @@
       }
 
       .name__logo-touhoujihen {
-        width: 150px;
+        width: 140px;
         height: auto;
 
         @include media-pc {
@@ -243,7 +245,7 @@
       }
 
       .name__logo-mmy {
-        width: 90px;
+        width: 88px;
         height: auto;
 
         @include media-pc {
