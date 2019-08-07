@@ -149,12 +149,12 @@
 
     .benefit__title {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       color: $brown-color;
 
       .title__icon {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
 
         @include media-pc {
           width: 36px;
