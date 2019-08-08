@@ -12,9 +12,12 @@ const docs = path.join(__dirname, 'docs');
 
 module.exports = {
   mode: 'production',
-  entry: path.resolve(src, 'js/index'),
+  entry: {
+    app: path.resolve(src, 'js/index'),
+    ayayayalive2d: path.resolve(src, 'js/ayayayalive2d')
+  },
   output: {
-    filename: 'app.min.js',
+    filename: '[name].min.js',
     path: docs,
     publicPath: '/gensou-cinema/'
   },
@@ -58,15 +61,16 @@ module.exports = {
       }
     ]),
     new HtmlWebpackPlugin({
-      template: path.join(src, '/html/index.html')
+      template: path.join(src, '/html/index.html'),
+      excludeChunks: ['ayayayalive2d']
     }),
     new HtmlWebpackPlugin({
       template: path.join(src, '/html/ayayayalive2d/index.html'),
       filename: 'ayayayalive2d/index.html',
-      inject: false
+      excludeChunks: ['app']
     }),
     new MiniCssExtractPlugin({
-      filename: 'app.min.css'
+      filename: '[name].min.css'
     })
   ]
 };
