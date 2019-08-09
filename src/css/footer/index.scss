@@ -42,6 +42,7 @@
     margin-top: 10px;
     background-image: url(/gensou-cinema/images/cinema_line.svg);
     background-repeat: repeat-x;
+    background-size: cover;
 
     @include media-pc {
       height: 17px;
