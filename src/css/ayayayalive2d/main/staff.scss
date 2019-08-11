@@ -1,14 +1,13 @@
-@import '../mixins/break_point.scss';
 @import '../variables/color.scss';
 
 .staff {
   position: relative;
   width: 100%;
-  padding: 55px 20px 80px;
+  padding: 80px 20px;
   z-index: 4;
 
   @include media-pc {
-    padding: 140px 70px;
+    padding: 110px 15px 160px;
   }
 
   .staff__list {
@@ -40,8 +39,8 @@
         @include media-pc {
           margin-top: 20px;
           font-size: 2.6rem;
-          letter-spacing: 0.8rem;
-          text-indent: 0.8rem;
+          letter-spacing: 0.4rem;
+          text-indent: 0.4rem;
         }
       }
 

@@ -1,6 +1,7 @@
 @import './staff.scss';
 @import '../variables//color.scss';
 @import '../variables/layout.scss';
+@import '../mixins/break_point.scss';
 
 .main {
   position: relative;
@@ -8,22 +9,40 @@
 
   .arrow {
     position: absolute;
-    top: -10px;
+    top: -15px;
     right: 0;
     left: 0;
     margin: 0 auto;
 
+    @include media-pc {
+      top: -22px;
+    }
+
     .arrow__img {
-      width: 20px;
+      width: 10px;
       height: auto;
+
+      @include media-pc {
+        width: 14px;
+      }
     }
   }
 
   .main__contents {
     padding: 60px 15px;
 
+    @include media-pc {
+      padding: 100px 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     .contents__wrapper {
       margin-top: 70px;
+
+      @include media-pc {
+        margin-top: 100px;
+      }
 
       &:first-of-type {
         margin-top: 0;
@@ -46,18 +65,35 @@
       .contents__live2d {
         width: 85%;
         height: auto;
+
+        @include media-pc {
+          width: 85%;
+        }
       }
 
       .contents__text {
         margin-top: 25px;
 
+        @include media-pc {
+          margin-top: 35px;
+        }
+
         .text__title {
           font-size: 1.6rem;
           letter-spacing: 0.1rem;
 
+          @include media-pc {
+            font-size: 2.4rem;
+            letter-spacing: normal;
+          }
+
           .title__original {
             display: block;
             font-size: 1.1rem;
+
+            @include media-pc {
+              font-size: 1.45rem;
+            }
           }
         }
 
@@ -65,12 +101,21 @@
           margin-top: 5px;
           font-size: 1.25rem;
           letter-spacing: 0.2rem;
+
+          @include media-pc {
+            font-size: 1.7rem;
+          }
         }
 
         .text__circle {
           margin-top: 10px;
           font-size: 1.25rem;
           letter-spacing: 0.2rem;
+
+          @include media-pc {
+            margin-top: 15px;
+            font-size: 1.7rem;
+          }
         }
       }
     }
@@ -86,10 +131,19 @@
     color: $base-color;
     border-radius: 5px;
     font-size: 1.3rem;
+
+    @include media-pc {
+      font-size: 1.8rem;
+    }
   }
 
   .back-to-top__message {
     margin-top: 10px;
     font-size: 1.2rem;
+
+    @include media-pc {
+      margin-top: 15px;
+      font-size: 1.4rem;
+    }
   }
 }
