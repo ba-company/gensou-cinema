@@ -31,6 +31,10 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
+  <!--favicon-->
+  <link rel="icon" href="/gensou-cinema/images/favicon.ico">
+  <!--favicon smartphone-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/gensou-cinema/images/apple-touch-icon.png">
 </head>
 
 <body data-is-loading="true">
@@ -368,7 +372,7 @@
   <div class="loading">
     <div class="loading__content js-loading-content" data-type="open">
       <div class="loading__icon"></div>
-      <span class="text--cinema">当館ではBGMを流せます</span>
+      <img class="loading__text" src="/gensou-cinema/images/text_loading.svg" alt="当館ではBGMを流せます" />
     </div>
     <div id="js-progress" class="loading__progress" aria-hidden="true"></div>
   </div>
