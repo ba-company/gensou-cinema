@@ -33,6 +33,14 @@
     background-repeat: no-repeat;
   }
 
+  .loading__text {
+    width: 170px;
+
+    @include media-pc {
+      width: 200px;
+    }
+  }
+
   .loading__content {
     padding: 0 0 15px;
     color: $brown-color;
